@@ -1,24 +1,77 @@
-.header {
+/* Write smartphone only styles here */
+@media only screen and (max-width: 430px) {
+  .main-header {
     display: grid;
     justify-items: center;
     grid-column: 1;
-    background-color:  #cc8800;
+    background-color: #c2bfe1;
     width: 100%;
-    height: 600px;
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-    color: #FFFFFF;
+  }
   
-  }
-
-  .header-image{
-    height: 55%;
+  .main-figure{
+    height: 300px;
     margin: 0;
-    padding-top: 6em;
-    padding-bottom: 0%;
   }
-
+  
+  .header-image {
+    height: 75%;
+    padding: 1em;
+    margin: 0;
+  }
+  
   .header-name {
     text-align: center;
     font-size: 1em;
-    padding-top: 0%;
   }
+}
+
+
+/* responsive design for tablet */
+@media only screen and (min-width: 430px) and (max-width: 1024px) {
+  .main-header {
+    display: grid;
+    justify-items: center;
+    grid-column: 1;
+    background-color: #c2bfe1;
+  }
+  
+  .main-figure{
+    height: 400px;
+    margin: 0;
+  }
+  
+  .header-image {
+    padding: 1em;
+    margin: 0;
+  }
+  
+  .header-name {
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+ /* Responsive design for desktop */
+ @media only screen and (min-width: 1024px) {
+  .main-header {
+    display: grid;
+    justify-items: center;
+    grid-column: 1;
+    background-color: #c2bfe1;
+  }
+  
+  .main-figure{
+    height: 400px;
+    margin: 0;
+  }
+  
+  .header-image {
+    padding: 1em;
+    margin: 0;
+  }
+  
+  .header-name {
+    text-align: center;
+    font-size: 1em;
+  }
+}
